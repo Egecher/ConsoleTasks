@@ -38,24 +38,24 @@ namespace sorular
             else if (inputSayi1 < inputSayi2)
             {
                 Console.Write("{0} ile {1} arasındaki çift sayılar: ", inputSayi1, inputSayi2);
-                for (int i = inputSayi1; i < inputSayi2; i++)
+                for (int i = inputSayi1; i <= inputSayi2; i++)
                 {
                     if (i % 2 == 0)
                     {
                         Console.Write($"{i}");
-                        if (i + 1 < inputSayi2) Console.Write(",");
+                        if (i + 2 <= inputSayi2) Console.Write(",");
                     }
                 }
             }
             else
             {
                 Console.Write("{0} ile {1} arasındaki çift sayılar: ", inputSayi1, inputSayi2);
-                for (int i = inputSayi1 - 1; i >= inputSayi2; i--)
+                for (int i = inputSayi1; i >= inputSayi2; i--)
                 {
                     if (i % 2 == 0)
                     {
                         Console.Write($"{i}");
-                        if (i - 1 >= inputSayi2) Console.Write(",");
+                        if (i - 2 >= inputSayi2) Console.Write(",");
                     }
                 }
             }

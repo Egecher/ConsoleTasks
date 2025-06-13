@@ -1,6 +1,5 @@
 # 🧠 C# Console Algorithms – Temel Mantık Alıştırmaları
 
-## 📋 İçerik
 [Soru 1](soru1.cs) Ürün adedi ve fiyat bilgisine göre **ürün fiyatlarının ortalamasını** hesaplama
 [Soru 2](soru2.cs) Girilen **10 sayıdan pozitif olanların toplamını** bulma
 [Soru 3](soru3.cs) Girilen **10 sayıdan negatif olanların adedini** bulma

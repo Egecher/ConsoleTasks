@@ -49,11 +49,14 @@ namespace sorular
             }
             else
             {
-                Console.Write("{0} ile {1} arasındaki çift sayılar: ", inputSayi2, inputSayi1);
+                Console.Write("{0} ile {1} arasındaki çift sayılar: ", inputSayi1, inputSayi2);
                 for (int i = inputSayi1 - 1; i >= inputSayi2; i--)
                 {
-                    Console.Write($"{i}");
-                    if (i - 1 >= inputSayi2) Console.Write(",");
+                    if (i % 2 == 0)
+                    {
+                        Console.Write($"{i}");
+                        if (i - 1 >= inputSayi2) Console.Write(",");
+                    }
                 }
             }
 

@@ -7,10 +7,22 @@ namespace sorular
         static void Main(string[] args)
         {
             Console.Write("Aralığını toplamak istediğiniz sayilardan 1. sayiyi giriniz: ");
-            int inputSayi1 = Convert.ToInt32(Console.ReadLine());
+            string input1 = Console.ReadLine();
+            if (!int.TryParse(input1, out int inputSayi1))
+            {
+                Console.WriteLine("Bir sayı girmediniz programı sonlandırıyorum.");
+                Console.ReadKey();
+                return;
+            }
 
             Console.Write("Aralığını toplamak istediğiniz sayilardan 2. sayiyi giriniz: ");
-            int inputSayi2 = Convert.ToInt32(Console.ReadLine());
+            string input2 = Console.ReadLine();
+            if (!int.TryParse(input2, out int inputSayi2))
+            {
+                Console.WriteLine("Bir sayı girmediniz programı sonlandırıyorum.");
+                Console.ReadKey();
+                return;
+            }
             int sonuc;
 
             if (inputSayi1 == inputSayi2)

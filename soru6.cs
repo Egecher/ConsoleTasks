@@ -7,7 +7,13 @@ namespace sorular
         static void Main(string[] args)
         {
             Console.Write("Sayi giriniz: ");
-            int girilenSayi = Convert.ToInt32(Console.ReadLine());
+            string input = Console.ReadLine();
+            if (!int.TryParse(input, out int girilenSayi))
+            {
+                Console.WriteLine("Bir sayı girmediniz programı sonlandırıyorum.");
+                Console.ReadKey();
+                return;
+            }
             int sonuc = 0;
 
             if (girilenSayi == 0)

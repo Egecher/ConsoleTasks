@@ -7,7 +7,13 @@ namespace sorular
         static void Main(string[] args)
         {
             Console.Write("Ortalaması alınacak toplam ürün sayısını giriniz: ");
-            int urunAdedi = Convert.ToInt32(Console.ReadLine());
+            string input1 = Console.ReadLine();
+            if (!int.TryParse(input1, out int urunAdedi))
+            {
+                Console.WriteLine("Bir sayı girmediniz programı sonlandırıyorum.");
+                Console.ReadKey();
+                return;
+            }
 
             double toplamFiyat = 0;
 
@@ -18,9 +24,9 @@ namespace sorular
                 while (true)
                 {
                     Console.Write($"{i}. sayıyı giriniz: ");
-                    string input = Console.ReadLine();
+                    string input2 = Console.ReadLine();
 
-                    if (double.TryParse(input, out fiyat) && fiyat >= 0)
+                    if (double.TryParse(input2, out fiyat) && fiyat >= 0)
                     {
                         break;
                     }

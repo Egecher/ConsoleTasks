@@ -18,7 +18,7 @@ namespace sorular
                 sonuc += nKare;
             }
 
-            Console.WriteLine("10 sayısının karesinin sonucu: {0}", sonuc);
+            Console.WriteLine("1 den 10'a kadar olan sayıların karelerinin toplamı: {0}", sonuc);
             Console.ReadKey();
         }
     }
